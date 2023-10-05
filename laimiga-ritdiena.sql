@@ -9,3 +9,12 @@ SELECT * FROM `Orders` WHERE `item` like'M%';
 /**********Atgirez Lietotajus sakartotus pec uzvarda alfabet seciba***********/
 
 SELECT * FROM `Customers` ORDER BY `last_name` ASC;
+
+
+/* nav pabeigts LR-4  */
+SELECT status, customer
+FROM Shippings
+ORDER BY status DESC;
+SELECT Orders.amount , Shippings.status
+FROM Shippings
+INNER JOIN Orders ON Shippings.customer = Shippings.customer ;
