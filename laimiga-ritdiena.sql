@@ -2,4 +2,5 @@
 SELECT `first_name`, `last_name` FROM `Customers` WHERE `age` > '30' AND `country` = 'USA';
 
 
-/**********Atgirez ***********/
+/**********Atgirez preces kur sakas ar burtu M***********/
+SELECT * FROM `Orders` WHERE `item` like'M%';
